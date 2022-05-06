@@ -14,7 +14,7 @@ body {
     font-family: Helvetica, Arial, Helvetica, sans-serif;
 }
 
-/* Header */
+/* Start of Header */
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
@@ -30,7 +30,6 @@ header {
     background-position: 80%;
     z-index: 9999;
 }
-
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -38,16 +37,13 @@ header h1 {
     margin: 0; 
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 header a {
     color: var(--primary-color);
     text-decoration: none;
 }
-
 header nav {
     margin: 7px 0;
 }
-
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -55,26 +51,25 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
-
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
-
+/* End of Header */
 
 section {
     padding: 60px;
 }
 
+/* Start of Hero */
 .hero {
     background-image: url(../images/image-bg.jpg);
     background-size: cover;
@@ -85,7 +80,6 @@ section {
     flex-wrap: wrap;
     align-items: flex-start;
 }
-
 .hero-cta {
     width: 35%;
     text-align: right;
@@ -94,14 +88,12 @@ section {
     font-size: 18px;
     line-height: 1.2;
 }
-
 .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 .hero-form {
     color: var(--secondary-color);
     background-color: rgb(252, 225, 56, 0.8);
@@ -112,16 +104,13 @@ section {
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 .hero-form h3 {
     font-size: 24px;
     margin: 0;
 }
-
 .hero-form p {
     margin: 5px 0 15px 0;
 }
-
 .form-input {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
@@ -136,11 +125,9 @@ section {
 .form-input:focus {
     background-color: rgba(255, 255, 255, 1);
 }
-
 .hero-form label {
     margin: 0 5px;
 }
-
 .hero-form button {
     color: var(--primary-color);
     background-color: var(--secondary-color);
@@ -152,18 +139,15 @@ section {
 .hero-form button:hover {
     background: var(--tertiary-color);
 }
-
 .checkbox-wrapper input, .radio-wrapper input {
     opacity: 0;
 }
-
 .checkbox-wrapper label, .radio-wrapper label {
     position: relative;
     left: 10px;
     margin: 10px;
     line-height: 1.6;
 }
-
 .checkbox-wrapper label::before, .radio-wrapper label::before {
     content: "";
     height: 20px;
@@ -174,11 +158,9 @@ section {
     top: -4px;
     left: -30px;
 }
-
 .radio-wrapper label::before {
     border-radius: 50%;
 }
-
 .radio-wrapper label::after {
     content: "";
     width: 20px;
@@ -190,7 +172,6 @@ section {
     top: -3px;
     background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
 }
-
 .checkbox-wrapper label::after {
     content: "";
     height: 6px;
@@ -202,17 +183,17 @@ section {
     top: 1px;
     transform: rotate(-58deg);
 }
-
 .checkbox-wrapper input + label::after, 
 .radio-wrapper input + label::after {
   content: none;
 }
-
 .checkbox-wrapper input:checked + label::after, 
 .radio-wrapper input:checked + label::after {
   content: "";
 }
+/* End of Hero */
 
+/* Start of What We Do-What You Do section */
 .section-title {
     font-size: 48px;
     color: var(--secondary-color);
@@ -222,15 +203,12 @@ section {
     margin: 0 auto 35px auto;
     width: 50%;
 }
-
 .primary-border {
     border-color: var(--primary-color);
 }
-
 .secondary-border {
     border-color: var(--tertiary-color);
 }
-
 .intro p {
     line-height: 1.7;
     color: var(--tertiary-color);
@@ -239,11 +217,9 @@ section {
     margin: 0 auto;
     text-align: center;
 }
-
 .steps {
     background: var(--primary-color);
 }
-
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -253,49 +229,43 @@ section {
     align-items: center;
     justify-content: space-between;
 }
-
 .step h3 {
     color: var(--secondary-color);
     font-size: 46px;
     margin-top: 10px;
     flex: 1 30%;
 }
-
 .step-info {
     flex: 2 70%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
 }
-
 .step-img {
     flex: 1 12%;
     margin-right: 20px;
 }
-
 .step-img img {
     max-width: 100%;
 }
-
 .step-text {
     flex: 12;
 }
-
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
     color: var(--secondary-color);
 }
-
 .step-text p {
     color: var(--tertiary-color);
     font-size: 18px;
 }
-
 .step:not(:last-child) {
     border-bottom: 1px solid var(--tertiary-color);
 }
+/* End of What We Do-What You Do section */
 
+/* Start of Meet the Trainers */
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -303,27 +273,22 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .trainer {
     margin: 20px;
     background: var(--secondary-color);
     color: var(--primary-color);
     flex: 1; 
 }
-
 .trainer img {
     width: 100%;
 }
-
 .trainer-bio {
     padding: 25px;
     line-height: 1.3;
 }
-
 .trainer-bio h3 {
     font-size: 28px;
 }
-
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
@@ -332,34 +297,30 @@ section {
 .trainer-bio p {
     font-size: 17px;
 }
+/* End of Meet the Trainers */
 
+ /* Start of Reach Out */
 .contact {
     background: var(--secondary-color);
 }
-
 .contact h3, .contact a {
     color: var(--primary-color);
 }
-
 .contact-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .contact-info div {
     color: white  
 }
-
 .contact-info p, .contact-info address {
     font-size: 16px;
 }
-
 .contact-info > * {
     flex: 1;
     margin: 15px;
 }
-
 .contact-form input, .contact-form textarea {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
@@ -375,7 +336,6 @@ section {
 .contact-form input:focus, .contact-form textarea:focus {
     background-color: rgba(255, 255, 255, 1);
 }
-
 .contact-form button {
     width: 100%;
     border: none;
@@ -390,24 +350,45 @@ section {
     color: var(--primary-color);
     background: var(--tertiary-color);
 }
-
 .contact-info iframe {
     height: 400px;
 }
+/* End of Reach Out*/
 
-
-.text-left {
-    text-align: left;
+/* Start of Footer */
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
 }
 
-.text-right {
+footer h2 {
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+footer div {
+    float: right;
+    line-height: 1.5;
     text-align: right;
 }
 
+footer a {
+    color: #024e76;
+}
+/* End of Footer */
+
+/* Utility styles and Media Queries */
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
 .flex-row {
     display: flex;
 }
-
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -446,7 +427,6 @@ section {
         flex: 1 100%;
     }
 }
-
 @media  screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
@@ -470,7 +450,6 @@ section {
         flex: 100%;
     }
 }
-
 @media screen and (max-width: 575px) {
     .hero-form button {
         width: 100%;
@@ -493,25 +472,4 @@ section {
     .contact-form {
         order: 3;
     }
-}
-footer {
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
-
-footer h2 {
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
-footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: #024e76;
 }
